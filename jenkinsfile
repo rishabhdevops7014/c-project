@@ -5,7 +5,7 @@ pipeline{
             steps{
                 sh '''
                 sleep 10  
-                echo "this is a build stage"              
+                echo " this is a build stage "
             }
         }
     }
