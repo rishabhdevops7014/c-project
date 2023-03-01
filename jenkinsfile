@@ -1,11 +1,47 @@
-pipeline{
+ipeline{
     agent any
     stages {
         stage('BUILD') {
             steps {
                 sh '''
-                sleep 10
+                sleep 10  
                 echo " this is a build stage "
+                '''
+            }
+        }
+
+        stage('UNIT TEST') {
+            steps {
+                sh '''
+                sleep 10  
+                echo " this is a  UNIT TEST stage "
+                '''
+            }
+        }
+
+        stage('DEPLOY') {
+            steps {
+                sh '''
+                sleep 10  
+                echo " this is a  DEPLOY stage "
+                '''
+            }
+        }
+
+        stage('JFROG') {
+            steps {
+                sh '''
+                sleep 10  
+                echo " this is a  JFROG stage "
+                '''
+            }
+        }
+
+        stage('RISHABH') {
+            steps {
+                sh '''
+                sleep 10  
+                echo " this is a RISHABH stage "
                 '''
             }
         }
